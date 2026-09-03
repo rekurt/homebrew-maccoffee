@@ -1,6 +1,6 @@
 cask "maccoffee" do
-  version "2.0.1"
-  sha256 "d31c079ead1049755443a8429beef6ebc10b130e7b7919a6d811fae88853b149"
+  version "2.0.2"
+  sha256 "519d60fcb325d65ab8f77c603112020a7f21e48e9d40551b96a669667064d032"
 
   url "https://rekurt.github.io/maccoffee-dist/MacCoffee-#{version}.dmg"
   name "Mac Coffee"
