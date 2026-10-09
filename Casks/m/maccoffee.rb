@@ -1,15 +1,15 @@
 cask "maccoffee" do
-  version "2.0.2"
-  sha256 "519d60fcb325d65ab8f77c603112020a7f21e48e9d40551b96a669667064d032"
+  version "2.0.4"
+  sha256 "66cc47d8cd1c03f771397ac85e2e5c0360055096e2dae6fa028ab44322a6047e"
 
-  url "https://rekurt.github.io/maccoffee-dist/MacCoffee-#{version}.dmg"
+  url "https://github.com/rekurt/Mac-Coffee/releases/download/v#{version}/MacCoffee-#{version}.dmg"
   name "Mac Coffee"
   desc "Utility to prevent idle sleep"
-  homepage "https://rekurt.github.io/maccoffee-dist/"
+  homepage "https://rekurt.github.io/Mac-Coffee/"
 
   livecheck do
-    url "https://rekurt.github.io/maccoffee-dist/"
-    regex(/MacCoffee[ ._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    url :url
+    strategy :github_latest
   end
 
   auto_updates true
